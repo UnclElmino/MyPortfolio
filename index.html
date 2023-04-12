@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emilio Shakhawat Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/963f1357de.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+    <!--About-->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col2">
+                    <h1 class="titles">About me</h1>
+                    <p>
+                        <strong>Age</strong> : 22 <br>
+                        <strong>Email</strong> : msiemilio@myseneca.ca<br>
+                        <strong>Language</strong> : English, Bengali<br>
+                        <strong>Class Section</strong> : ZBB<br>
+                        <strong>Student Id</strong> : 144176211<br>
+                        <strong>Instructor</strong> : Mark Meritt<br><br>
+                    </p>
+                    <p>As a computer programming student and an intermediate anime artist, I am a creative individual
+                        with a passion for both technology and art. I have honed my skills in coding and software
+                        development, immersing myself in the world of programming languages. In addition to my technical
+                        expertise, my artistic flair shines through my anime illustrations, where I blend my passion for
+                        Japanese culture with my artistic talents. My portfolio showcases my skill set, showcasing my
+                        proficiency in illustrations, and highlights my unique perspective as a creative individual who
+                        wants to bridges the gap between technology and art.<br><br>
+                        I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy.
+                        No part of this assessment has been copied manually or electronically from any other source
+                        (including web sites) except for the information supplied by the WEB222 instructors and / or
+                        made available in this assessment for my use. I also declare that no part of this assignment has
+                        been distributed to other students.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tablinks activelink" onclick="opentab('skills')">Skills</p>
+                        <p class="tablinks" onclick="opentab('experience')">Experience</p>
+                        <p class="tablinks" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tabcontents activetab" id="skills">
+                        <ul>
+                            <li><span>Illustrations</span><br>illustrating and designing characters.</li>
+                            <li><span>Programming</span><br>Using C/C++ to create basic programs.</li>
+                            <li><span>Web Development</span><br>Basic knowledge of Html, CSS and Javascript to create
+                                websites.</li>
+                        </ul>
+                    </div>
+                    <div class="tabcontents" id="experience">
+                        <ul>
+                            <li><span>Jan 21 - Apr 21</span><br>Graphic designer Intern.</li>
+                            <li><span>Aug 21 - Oct 21</span><br>Blogger at Tech company for specializing no-code app
+                                builders.</li>
+                        </ul>
+                    </div>
+                    <div class="tabcontents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Computer Programming Diploma from Seneca College Canada</li>
+                            <li><span>2019</span><br>A levels from British Standard School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Portfolio-->
+
+    <div id="portfolio">
+        <div class="container">
+            <h2 class="titles">Portfolio</h2>
+            <div class="worklist">
+                <div class="work">
+                    <img src="images/work 1.png">
+                </div>
+                <div class="work">
+                    <img src="images/work 2.png">
+                </div>
+                <div class="work">
+                    <img src="images/work 3.jpg">
+                </div>
+            </div>
+            <a href="https://www.instagram.com/isartman/" class="btn">See More</a>
+        </div>
+    </div>
+    <!--Contents-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h2 class="titles">Contact Me</h2>
+                    <p><i class="fa-sharp fa-regular fa-envelope"></i> msiemilio@myseneca.ca</p>
+                    <p><i class="fa-regular fa-phone"></i> +1 (416) 819-4862</p>
+                    <a href="images/Resume.pdf" download class="btn btn2">Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <input type="text" name="Address" placeholder="Your Street Name" required>
+                        <input type="text" name="City" placeholder="Your City" required>
+                        <input type="text" name="Postal Code" placeholder="Your Postal Code"
+                            pattern="[A-Za-z]\d[A-Za-z] ?\d[A-Za-z]\d" required>
+                        <div class="query">
+                            <input type="radio" id="Hiring" name="query" value="Hiring" checked="checked" />
+                            <label for="Hiring">Hiring</label>
+                            <input type="radio" id="Education" name="query" value="Education" />
+                            <label for="Education">Education</label>
+                            <input type="radio" id="Other" name="query" value="Other" />
+                            <label for="Other">Other</label>
+                        </div>
+                        <textarea name="Message" rows="6" placeholder="Your Query"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./info.js"></script>
+</body>
+
+</html>
